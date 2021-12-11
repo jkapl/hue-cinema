@@ -13,6 +13,6 @@ class HueApi:
     return ''.join([self.api, "/lights/1"])
 
   def put(self, sat, bri, hue):
-    args = {"on":"true", "sat": sat, "bri": bri, "hue": hue }
+    args = { "on":"true", "sat": sat, "bri": bri, "hue": hue }
     return [''.join([self.api, '/lights/1/state']), args]
 
